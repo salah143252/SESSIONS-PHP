@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nom = $_POST['nom'] ?? '';
     $motdepasse = $_POST['motdepasse'] ?? '';
 
-    if ($nom === "Ranya" && $motdepasse === "1234") {
+    if ($nom === "salah" && $motdepasse === "1234") {
         session_regenerate_id(true);
         $_SESSION['user'] = $nom;
         header('Location: dashboard.php');
